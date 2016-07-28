@@ -7,7 +7,7 @@ WORKDIR /opt/node-red
 RUN npm install
 RUN ./node_modules/.bin/grunt build
 ADD files/run.sh /opt/node-red/run.sh
-ADD files/settings.js /opt/node-red/settings.js.template
+ADD files/settings.js /opt/node-red/settings.js
 
 EXPOSE 1880
 
